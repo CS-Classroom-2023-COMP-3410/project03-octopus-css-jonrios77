@@ -1,0 +1,325 @@
+
+.octopus-table th,
+.octopus-table td {
+    white-space: nowrap;
+}
+/* Set smaller width for all columns in octopus table */
+.octopus-table th,
+.octopus-table td {
+    width: 60px;
+}
+
+
+
+/* Align all content under the banner to the left */
+#main-content {
+    text-align: left;
+}
+/* Add a light blue background to the header section */
+#header {
+    background: linear-gradient(to bottom, blue 0%,  90%, transparent 50%);
+    padding: .5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    margin-bottom: 0;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative ;
+}
+/* Top banner */
+.banner {
+    width: 100%;
+     background: transparent; /* Remove background from banner */
+     padding: 0; /* Reset padding for banner */
+
+     color: #fff;
+     font-size: 2.5rem;
+     font-family: 'Segoe UI', Arial, sans-serif;
+     letter-spacing: 2px;
+     font-weight: bold;
+     margin-top: 4px;
+     margin-bottom: 0;
+}
+ .title{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ .undertitle{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 1;
+ }
+
+/* Subtitle under banner */
+.subtitle {
+    text-align: left;
+    font-style: italic;
+    margin: 16px 0 32px 0;
+    font-size: 1.2rem;
+    color: #0a0f15;
+}
+
+/* Main content styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafd;
+    margin: 20px;
+    padding: 0 0 10px 0;
+    color: #222;
+}
+
+/* Highlight mantle in anatomy as orange */
+.important {
+    color: rgb(230, 103, 12);
+    font-weight: bold;
+}
+
+    /* Octopus Quiz Section Styling */
+    #quiz-section {
+        background: #e3f2fd;
+        border: 2px solid #90caf9;
+        border-radius: 0;
+        max-width: 90vw;
+        margin: 12px auto 20px auto;
+        padding: 0px 24px 24px 24px;
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .quiz-content {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .quiz-image {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 0 0 auto;
+    }
+
+    .quiz-image img {
+        border: 3px solid purple;
+        border-radius: 12px;
+        box-shadow: 0 1px 4px rgba(44, 62, 80, 0.10);
+        background: #fff;
+        padding: 1px;
+        margin-left: 12px;
+    }
+
+    #quiz-section h2 {
+        text-align: left;
+        align-self: flex-start;
+        margin-bottom: 12px;
+        color: #040609;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+    #quiz-section form input[type="submit"] {
+        font-size: 0.95rem;
+        padding: 7px 0;
+        width: 30%;
+        margin: 8px 0 0 0;
+    }
+
+    #quiz-section img {
+        display: block;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(44, 62, 80, 0.10);
+    }
+
+    #quiz-section form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #quiz-section form label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 4px;
+        font-weight: 500;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    #quiz-section form input[type="text"] {
+        margin-left: 16px;
+        flex: 0 0 180px;
+        min-width: 120px;
+        max-width: 220px;
+    }
+h1 {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #090808;
+    text-align: left;
+    margin-top: 0; /* Remove top margin from first h2 in main content to reduce gap */
+}
+
+h3 {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #000000;
+    padding-bottom: 6px;
+    width: fit-content;
+    margin-left: left;
+    margin-right: auto;
+}
+h4 {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+h5 {
+    font-size: .8rem;
+    color: #000000;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+/* Make External Resources heading larger */
+h6 {
+    font-size: .8rem;
+    color: #000000;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+
+/* Light blue box for quiz */
+.quiz-box {
+    background: #e3f2fd;
+    border: 2px solid #90caf9;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 32px auto;
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Form fields */
+.quiz-box label {
+    font-weight: 500;
+    color: #1e2a38;
+    margin-bottom: 4px;
+}
+
+.quiz-box input[type="text"],
+.quiz-box input[type="email"] {
+    padding: 8px;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.quiz-box button[type="submit"] {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quiz-box button[type="submit"]:hover {
+    background: #1565c0;
+}
+
+/* Table for Common Octopus Species */
+.table-title {
+    margin-top: 32px;
+    font-size: 1.4rem;
+    color: #1e2a38;
+    text-align: left;
+}
+
+.octopus-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 16px 0 32px 0;
+    font-size: 1rem;
+}
+
+
+.octopus-table th {
+    background: #717171; 
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
+    column-width: auto;
+}
+
+.octopus-table td {
+    background: #f7fafd;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid #121212;
+    column-width: auto;
+}
+
+.copyright {
+    font-size: 1em;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+/* Footer styling */
+#footer {
+    background: #e0e0e0;
+    color: #000000;
+    text-align: center;
+    padding: 18px 0 12px 0;
+    font-size: .8rem;
+    margin-top: 32px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+.footer-text {
+    margin: 0;
+    font-style: italic;
+}
