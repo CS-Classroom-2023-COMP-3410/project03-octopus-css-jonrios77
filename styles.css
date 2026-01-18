@@ -2,6 +2,7 @@
 html, body {
     margin-top: 0 !important;
     padding-top: 0 !important;
+    margin-bottom: 5 !important;
 }
 /* Align all content under the banner to the left */
 #main-content {
@@ -321,7 +322,7 @@ body {
         background: #e0e0e0;
         color: #000000;
         text-align: center;
-        padding: 18px 0 12px 0;
+        padding: 12px 0 4px 0;
         font-size: .8rem;
         margin-top: 32px;
         width: 100vw;
