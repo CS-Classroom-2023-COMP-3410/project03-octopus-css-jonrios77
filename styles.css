@@ -1,20 +1,13 @@
-
-.octopus-table th,
-.octopus-table td {
-    white-space: nowrap;
+/* this was used for the top banner to make sure it extended passed the margin*/
+html, body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
-/* Set smaller width for all columns in octopus table */
-.octopus-table th,
-.octopus-table td {
-    width: 60px;
-}
-
-
-
 /* Align all content under the banner to the left */
 #main-content {
     text-align: left;
 }
+
 /* Add a light blue background to the header section */
 #header {
     background: linear-gradient(to bottom, blue 0%,  90%, transparent 50%);
@@ -23,8 +16,8 @@
     padding-bottom: 0.5rem;
     padding-top: 0rem;
     margin-bottom: 0;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -50vw; /* extend banner left passed margin */
+    margin-right: -50vw; /* extend banner right passed margin */
     position: relative ;
 }
 /* Top banner */
@@ -41,6 +34,7 @@
      margin-top: 4px;
      margin-bottom: 0;
 }
+
  .title{
     color: #fff;
     font-size: 2.5rem;
@@ -170,156 +164,176 @@ body {
         min-width: 120px;
         max-width: 220px;
     }
-h1 {
+
+    /* Th title part banner*/
+    h1 {
     margin-top: 32px;
     text-align: center;
     font-size: 2rem;
     color: #000000;
-}
+    }
 
-h2 {
+    /* Introduction */
+    h2 {
     margin-top: 40px;
     font-size: 1.5rem;
     color: #090808;
     text-align: left;
     margin-top: 0; /* Remove top margin from first h2 in main content to reduce gap */
-}
+    }
 
-h3 {
-    margin-top: 12px;
-    font-size: 1rem;
-    color: #000000;
-    padding-bottom: 6px;
-    width: fit-content;
-    margin-left: left;
-    margin-right: auto;
-}
-h4 {
-    font-size: 1rem;
-    color: #000000;
-    margin-top: 24px;
-    margin-bottom: 8px;
-}
-h5 {
-    font-size: .8rem;
-    color: #000000;
-    margin-top: 28px;
-    margin-bottom: 8px;
-}
-/* Make External Resources heading larger */
-h6 {
-    font-size: .8rem;
-    color: #000000;
-    margin-top: 32px;
-    margin-bottom: 8px;
-}
-
-
-/* Light blue box for quiz */
-.quiz-box {
-    background: #e3f2fd;
-    border: 2px solid #90caf9;
-    border-radius: 12px;
-    max-width: 400px;
-    margin: 32px auto;
-    padding: 24px 32px;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-/* Form fields */
-.quiz-box label {
-    font-weight: 500;
-    color: #1e2a38;
-    margin-bottom: 4px;
-}
-
-.quiz-box input[type="text"],
-.quiz-box input[type="email"] {
-    padding: 8px;
-    border: 1px solid #90caf9;
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-bottom: 12px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Submit button */
-.quiz-box button[type="submit"] {
-    background: #1976d2;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 0;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.quiz-box button[type="submit"]:hover {
-    background: #1565c0;
-}
-
-/* Table for Common Octopus Species */
-.table-title {
-    margin-top: 32px;
-    font-size: 1.4rem;
-    color: #1e2a38;
-    text-align: left;
-}
-
-.octopus-table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 16px 0 32px 0;
-    font-size: 1rem;
-}
+    /* Amazing facts */
+    h3 {
+        margin-top: 12px;
+        font-size: 1rem;
+        color: #000000;
+        padding-bottom: 6px;
+        width: fit-content;
+        margin-left: left;
+        margin-right: auto;
+    }
+    /* Anatomy */
+    h4 {
+        font-size: 1rem;
+        color: #000000;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    /* comparisons */
+    h5 {
+        font-size: .8rem;
+        color: #000000;
+        margin-top: 28px;
+        margin-bottom: 8px;
+    }
+    /* External rss */
+    h6 {
+        font-size: .8rem;
+        color: #000000;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
 
 
-.octopus-table th {
-    background: #717171; 
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #000000;
-    column-width: auto;
-}
+    /* Light blue box for quiz */
+    .quiz-box {
+        background: #e3f2fd;
+        border: 2px solid #90caf9;
+        border-radius: 12px;
+        max-width: 400px;
+        margin: 32px auto;
+        padding: 24px 32px;
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.octopus-table td {
-    background: #f7fafd;
-    color: #000000;
-    padding: 10px;
-    border: 1px solid #121212;
-    column-width: auto;
-}
+    /* Form fields */
+    .quiz-box label {
+        font-weight: 500;
+        color: #1e2a38;
+        margin-bottom: 4px;
+    }
+    /*Quiz inputs*/
+    .quiz-box input[type="text"],
+    .quiz-box input[type="email"] {
+        padding: 8px;
+        border: 1px solid #90caf9;
+        border-radius: 6px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.copyright {
-    font-size: 1em;
-    vertical-align: middle;
-    margin-right: 2px;
-}
-/* Footer styling */
-#footer {
-    background: #e0e0e0;
-    color: #000000;
-    text-align: center;
-    padding: 18px 0 12px 0;
-    font-size: .8rem;
-    margin-top: 32px;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    box-sizing: border-box;
-}
+    /* Submit button */
+    .quiz-box button[type="submit"] {
+        background: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
 
-.footer-text {
-    margin: 0;
-    font-style: italic;
-}
+    .quiz-box button[type="submit"]:hover {
+        background: #1565c0;
+    }
+
+
+
+    .octopus-table th,
+    .octopus-table td {
+        white-space: nowrap;
+    }
+    /* Set smaller width for all columns in octopus table */
+    .octopus-table th,
+    .octopus-table td {
+        width: 60px;
+    }
+
+
+    /* Table for Common Octopus Species */
+    .table-title {
+        margin-top: 32px;
+        font-size: 1.4rem;
+        color: #1e2a38;
+        text-align: left;
+    }
+
+    /*Octopus Table*/
+    .octopus-table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 16px 0 32px 0;
+        font-size: 1rem;
+    }
+
+    /*Octopus Table*/
+    .octopus-table th {
+        background: #717171; 
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #000000;
+        column-width: auto;
+    }
+    /*Octopus Table*/
+    .octopus-table td {
+        background: #f7fafd;
+        color: #000000;
+        padding: 10px;
+        border: 1px solid #121212;
+        column-width: auto;
+    }
+
+    .copyright {
+        font-size: 1em;
+        vertical-align: middle;
+        margin-right: 2px;
+    }
+    /* Footer styling */
+    #footer {
+        background: #e0e0e0;
+        color: #000000;
+        text-align: center;
+        padding: 18px 0 12px 0;
+        font-size: .8rem;
+        margin-top: 32px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        box-sizing: border-box;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-style: italic;
+    }
